@@ -41,8 +41,6 @@ const Wordle = ({ solution }) => {
  
   return (
     <>
-    <div> Solution: {solution}</div>
-    <div> Current Guess: {currentGuess}</div>
     <Grid currentGuess = {currentGuess} guesses = {guesses} turn = {turn}/>
     <Keypad usedKeys = { usedKeys } />
     {showModal && <Modal isCorrect={isCorrect} turn={turn} solution={solution}/>}

@@ -9,7 +9,7 @@ function App() {
   const [solution, setSolution] = useState(null)
 
   useEffect(()=>{
-    fetch("http://localhost:3001/words")
+    fetch("https://my-json-server.typicode.com/HossamAbdelNasser/react-wordle/words")
     .then(res => res.json()) 
     .then (data =>{
       const randomSolution = data[Math.floor(Math.random()*data.length)]

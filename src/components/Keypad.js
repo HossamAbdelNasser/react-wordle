@@ -5,7 +5,7 @@ const Keypad = ({ usedKeys }) => {
     const [letters, setLetters] = useState('')
 
     useEffect(()=>{
-        fetch("http://localhost:3001/letters")
+        fetch("https://my-json-server.typicode.com/HossamAbdelNasser/react-wordle/letters")
         .then(res => res.json()) 
         .then (json =>{
             setLetters(json)
