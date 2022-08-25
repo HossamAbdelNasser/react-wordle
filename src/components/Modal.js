@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 
 const Modal = ( {isCorrect, turn, solution} ) => {
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import useWordle from '../hooks/useWordle'
 import Grid from "./Grid"
 import Keypad from "./Keypad"
@@ -8,7 +8,6 @@ const Wordle = ({ solution }) => {
 
     const { currentGuess, handleKeyup, guesses, isCorrect, turn, usedKeys } = useWordle(solution)
     const [showModal, setShowModal] = useState(false)
-    const modalRef = useRef(false)
 
     useEffect(()=>{
          window.addEventListener('keyup', handleKeyup);
