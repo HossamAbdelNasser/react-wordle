@@ -14,7 +14,6 @@ function App() {
     .then (data =>{
       const randomSolution = data[Math.floor(Math.random()*data.length)]
       setSolution(randomSolution.word)
-      console.log(randomSolution.word)
     })
   })
   
