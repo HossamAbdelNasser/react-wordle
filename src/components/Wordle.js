@@ -14,7 +14,7 @@ const Wordle = ({ solution }) => {
         return ()=> {
           window.removeEventListener('keyup', handleKeyup);
         }
-    }, [isCorrect, turn])
+    }, [handleKeyup, isCorrect, turn])
 
     useEffect(()=>{
       let win = null;
